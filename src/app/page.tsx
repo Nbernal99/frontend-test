@@ -1,7 +1,13 @@
-import { Sidebar } from "lucide-react";
+'use client';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-export  default function HomePage() {
-  return (
-    <div> TEXTO PRUEBA</div>
-  );
+export default function HomePage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/users');
+  }, [router]);
+
+  return null;
 }

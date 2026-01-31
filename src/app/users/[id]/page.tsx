@@ -2,7 +2,6 @@
 
 import { useQuery } from '@tanstack/react-query';
 import { useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
 
 type User = {
   id: number;
@@ -62,7 +61,7 @@ export default function UserDetailPage() {
 
       <h1 className="text-2xl font-bold mb-4">{user.name}</h1>
 
-      <div className="space-y-2 text-gray-700 mb-4">
+      <div className="space-y-2 text-gray-700">
         <p><strong>Username:</strong> {user.username}</p>
         <p><strong>Email:</strong> {user.email}</p>
         <p><strong>Teléfono:</strong> {user.phone}</p>
@@ -72,13 +71,6 @@ export default function UserDetailPage() {
           <strong>Dirección:</strong> {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
         </p>
       </div>
-
-      <Link
-        href={`/chat?to=${user.id}&name=${encodeURIComponent(user.name)}`}
-        className="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
-      >
-        Enviar Mensaje
-      </Link>
     </div>
   );
 }
