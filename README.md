@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Técnica - Frontend
+---
 
-## Getting Started
 
-First, run the development server:
+## Tecnologías utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 15** (App Router): Para la creación de rutas dinámicas y renderizado.
+- **React Query**: Para el manejo de datos asíncronos de los usuarios y el cacheo de los datos de usuarios.
+- **Tailwind CSS**: Para el diseño responsivo y modular.
+- **Socket.IO**: Para simular un sistema de chat en tiempo real.
+- **TypeScript**: Para la seguridad y robustez en la escritura del código.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pasos para instalación y ejecución
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pasos para ejecutar 
+1. **Clonar el repositorio**  
+   `git clone https://github.com/Nbernal99/frontend-test.git`  
+   `cd frontend-test`
 
-## Learn More
+2. **Instalar dependencias**  
+   `npm install`
 
-To learn more about Next.js, take a look at the following resources:
+3. **Ejecutar la aplicación**  
+   `npm run dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Abrir en el navegador**  
+   Accede a la URL:  
+   `http://localhost:3000`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Iniciar sesión (Login simulado)**  
+   - **Correo:** `admin@prueba.com`  
+   - **Contraseña:** `Password`
 
-## Deploy on Vercel
+## Funciones Adicionales
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-  Login simulado con rutas protegidas con middleware
+-  Dashboard con sidebar.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  ## Que se agregaría adicional con más tiempo:
+      
+   - Agregar notificaciones de mensajes recibidos.
+   
+   - Implementaría pruebas unitarias.
+
+   
