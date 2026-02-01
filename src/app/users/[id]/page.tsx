@@ -71,6 +71,13 @@ export default function UserDetailPage() {
           <strong>Dirección:</strong> {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
         </p>
       </div>
+
+      <button
+        onClick={() => router.push(`/chat?userId=${user.id}`)}
+        className="mt-6 text-sm text-blue-600 hover:underline"
+      >
+        Enviar mensaje
+      </button>
     </div>
   );
 }
